@@ -471,6 +471,7 @@ a:focus {
   *zoom: 1;
   margin-right: auto;
   margin-left: auto;
+  margin-bottom: 3em;
 }
 
 .row-fluid:before,
@@ -4879,6 +4880,7 @@ input[type="submit"].btn.btn-mini {
   background-image: linear-gradient(to bottom, #222222, #111111);
   background-repeat: repeat-x;
   border-color: #252525;
+  margin-top: 5em;
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff222222', endColorstr='#ff111111', GradientType=0);
 }
 
