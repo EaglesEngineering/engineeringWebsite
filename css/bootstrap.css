@@ -18,7 +18,12 @@ td {
   width: 25em;
 }
 
-/*td */
+.gradient {
+  background-image: url(../img/homeGradient.jpg);
+  background-color: #cccccc;
+  background-size: 80px;
+  height: 50%;
+}
 
 .centered-header {
   margin-right: auto;
@@ -212,8 +217,8 @@ sub {
 }
 
 img {
-  width: auto\9;
-  height: auto;
+  /*width: auto\9;
+  height: auto;*/
   max-width: 100%;
   vertical-align: middle;
   border: 0;
