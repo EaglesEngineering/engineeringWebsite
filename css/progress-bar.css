@@ -1,4 +1,4 @@
-#progress{
+#progress-bar{
 -webkit-box-shadow: rgba(0, 0, 0, 0.592157) 0px 1px 1px 0px;
 -webkit-font-smoothing: antialiased;
 background-image: linear-gradient(90deg, rgb(19, 146, 220) 0%, rgb(6, 157, 244) 100%);
