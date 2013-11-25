@@ -8,6 +8,18 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+table {
+  margin-left: auto;
+  margin-right: auto;
+  
+}  
+
+td {
+  width:30%;
+}
+
+/*td */
+
 .centered-header {
   margin-right: auto;
   margin-left: auto;
@@ -19,8 +31,9 @@
 }
 
 .shadow {
--moz-box-shadow: 0 0 30px 5px #999;
--webkit-box-shadow: 0 0 30px 5px #999;
+  -moz-box-shadow: 0 0 30px 5px #999;
+  -webkit-box-shadow: 0 0 30px 5px #999;
+  box-shadow: 0 0 30px 5px #999;
 }
 
 .black-back {
@@ -56,7 +69,7 @@
 }
 
 .dev-post-info {
-  color: grey ;
+  color: grey;
 }
 
 .dev-title{
