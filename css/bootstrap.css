@@ -86,6 +86,7 @@ td {
   /*margin-top: 5em;*/
   line-height: 150%;
   padding: 3em;
+  padding-bottom: 1em;
 }
 
 .post-column {
@@ -774,7 +775,7 @@ p {
 }
 
 .lead {
-  margin-bottom: 20px;
+  margin-bottom: 5px;
   font-size: 21px;
   font-weight: 200;
   line-height: 30px;
