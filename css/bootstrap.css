@@ -21,7 +21,7 @@ td {
 .gradient {
   background-image: url(../img/homeGradient.jpg);
   background-color: #cccccc;
-  background-size: 80px;
+  background-size: 1000px 500px;
   height: 50%;
 }
 
