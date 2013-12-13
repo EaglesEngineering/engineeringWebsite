@@ -16,6 +16,12 @@
   margin-left: auto;
 }
 
+.post-signature {
+  padding-top: 2em;
+  color: #B1B1B1;
+  font-size: .85em;
+}
+
 /*This will hold the title in a blurred picture*/
 .title-holder {
   padding-top: 95px;
