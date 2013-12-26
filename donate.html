@@ -4,7 +4,7 @@
 		<title>Support Origin</title>
 		<p>Test</p>
 		<link href="css/bootstrap-min.css" rel="stylesheet">
-		<script src="js/jquery-1.10.2.js"></script>
+    <script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
 	</head>
 	<body>
 <!--Navbar Start-->
@@ -43,7 +43,22 @@
         <h1>Please help us make the <strong>Origin</strong> a reality by supporting!</result>
         <p class="lead">We are a grassroots start up company with no corporate sponsors and we need your support to make this project successful.</p>
         <!--<a class="btn btn-large btn-success" href="#">Support Now!</a>-->
+        <script>
+  CoinWidgetCom.go({
+    /* You can get this DOGE tip script from http://dogewidget.bitmindo.com/ */
+    wallet_address: "DGarHbWsYCiRYNuG199hd4EcnsEMkaZA9x"
+    , currency: "dogecoin"
+    , counter: "amount"
+    , alignment: "bl"
+    , qrcode: true
+    , auto_show: false
+    , lbl_button: "Donate"
+    , lbl_address: "Tip Dogecoin to this Address:"
+    , lbl_amount: "DOGE"
+  });
+</script>
       </div>
+
 
 <!--Bitpay chunk-->
 <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));" >
@@ -117,7 +132,7 @@
               </div>
             </div>
             <div id="orderID" class="control-group" style="padding: 2%;">
-              <label class="control-label" style="width: 40px">Amount:</label>
+              <label class="control-label" style="width: 40px">Amount(USD):</label>
               <div class="controls" style="margin-left: 60px">
                 <input type="number" name="amount" value="10" min="1" step="1" style="width: 39%">
               </div>
@@ -135,10 +150,6 @@
 
           </fieldset>
         </form>
-
-
-
-
 
 
 
@@ -173,5 +184,7 @@
     var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
   }(document, 'script'));
 </script>
+
+
 	</body>
 </html>
