@@ -4,7 +4,7 @@
 		<title>Support Origin</title>
 		<p>Test</p>
 		<link href="css/bootstrap-min.css" rel="stylesheet">
-    <script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
+
 	</head>
 	<body>
 <!--Navbar Start-->
@@ -43,31 +43,40 @@
         <h1>Please help us make the <strong>Origin</strong> a reality by supporting!</result>
         <p class="lead">We are a grassroots start up company with no corporate sponsors and we need your support to make this project successful.</p>
         <!--<a class="btn btn-large btn-success" href="#">Support Now!</a>-->
-        <script>
-  CoinWidgetCom.go({
-    /* You can get this DOGE tip script from http://dogewidget.bitmindo.com/ */
-    wallet_address: "DGarHbWsYCiRYNuG199hd4EcnsEMkaZA9x"
-    , currency: "dogecoin"
-    , counter: "amount"
-    , alignment: "bl"
-    , qrcode: true
-    , auto_show: false
-    , lbl_button: "Donate"
-    , lbl_address: "Tip Dogecoin to this Address:"
-    , lbl_amount: "DOGE"
-  });
-</script>
-      </div>
+  
 
+
+
+
+</script>
+<script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
+ <script>
+        CoinWidgetCom.go({
+          /* You can get this DOGE tip script from http://dogewidget.bitmindo.com/ */
+          wallet_address: "DGarHbWsYCiRYNuG199hd4EcnsEMkaZA9x"
+          , currency: "dogecoin"
+          , counter: "amount"
+          , alignment: "bl"
+          , qrcode: true
+          , auto_show: false
+          , lbl_button: "Donate"
+          , lbl_address: "Tip Dogecoin to this Address:"
+          , lbl_amount: "DOGE"
+        });
+        </script>
+        
+</div>
 
 <!--Bitpay chunk-->
 <form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));" >
         <input name="action" type="hidden" value="checkout">
         <fieldset class="phone-form well form-horizontal" style="margin-left: 10%; margin-right: 10%; margin-top: 5px;">
+          <!--BitPay Logo--><a href="https://bitpay.com/faq" title="How BitPay Works" onclick="javascript:window.open('https://bitpay.com/faq'); return false;" style="margin-left:45%;"><img src="https://bitpay.com/img/logo.png" border="0" alt="BitPay Logo" width="200"></a>
             <div id="orderID" class="control-group" style="padding: 2%;">
               <label class="control-label" style="width: 40px">Email:</label>
               <div class="controls" style="margin-left: 60px">
-                <input name="orderID" type="email" class="input input-xlarge" placeholder="Email address" maxlength=50 autocapitalize=off autocorrect=off><br>
+                <input type="email" name="email" placeholder="Email Address">
+                <br>
               </div>
             </div>
             <div id="price" class="control-group" style="padding: 2%;">
@@ -123,7 +132,8 @@
 
 <!--Paypal-->
         <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
-          <fieldset class="phone-form well form-horizontal" style="margin-left: 10%; margin-right: 10%; margin-top: 5px;">
+
+          <fieldset class="phone-form well form-horizontal" style="margin-left: 10%; margin-right: 10%; margin-top: 5px;"><!-- PayPal Logo --><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo" style="margin-left:45%;"></a><!-- PayPal Logo -->
             <div id="orderID" class="control-group" style="padding: 2%;">
               <label class="control-label" style="width: 40px">Email:</label>
               <div class="controls" style="margin-left: 60px">
@@ -132,7 +142,7 @@
               </div>
             </div>
             <div id="orderID" class="control-group" style="padding: 2%;">
-              <label class="control-label" style="width: 40px">Amount(USD):</label>
+              <label class="control-label" style="width: 40px">Amount:</label>
               <div class="controls" style="margin-left: 60px">
                 <input type="number" name="amount" value="10" min="1" step="1" style="width: 39%">
               </div>
