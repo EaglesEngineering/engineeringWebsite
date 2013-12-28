@@ -8,7 +8,18 @@
  * Designed and built with all the love in the world by @mdo and @fat.
  */
 
+.span4 h2{
+  text-align: center;
+  float: center;
+}
 
+.span4 p{
+  width:80%;
+  text-align: center;
+  float: center;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .logo-banner {
   background-image: url(../img/originTitle.png);
@@ -72,13 +83,35 @@ td {
   background: #151515;
 }
 
+.jumjbotron h1{
+  padding-top: 5em;
+}
+
 .jumbotron {
   margin-left: auto;
   margin-right: auto;
   text-align: center;
-  margin-bottom: 10em;
-  margin-top: 2em;
+  margin-bottom: 5em;
+  margin-top: 5em;
   width:65em;
+}
+
+.subotron {
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  margin-bottom: 5em;
+  margin-top: 2em;
+  width:90%;
+}
+
+
+.subotron .lead{
+  color: rgb(107, 107, 107);
+  width:75%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .break {
@@ -4569,6 +4602,7 @@ input[type="submit"].btn.btn-mini {
   *z-index: 2;
   margin-bottom: 20px;
   overflow: visible;
+  float: center;
 }
 
 .navbar-inner {
@@ -4797,10 +4831,9 @@ input[type="submit"].btn.btn-mini {
 
 .navbar .nav {
   position: relative;
-  left: 0;
   display: block;
-  float: left;
-  margin: 0 10px 0 0;
+  float: center;
+  margin: 0 0 0 0;
 }
 
 .navbar .nav.pull-right {
