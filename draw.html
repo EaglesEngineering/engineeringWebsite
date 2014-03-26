@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Support Origin</title>
+    <p>Test</p>
+    <link href="css/bootstrap-min.css" rel="stylesheet">
+
+  </head>
+  <body>
+<!--Navbar Start-->
+    <div class="navbar navbar-inverse navbar-fixed-top">
+      <div class="navbar-inner">
+        <div class="container">
+          <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div class="centered-header">
+          <div class="nav-collapse collapse">
+            <ul class="nav">
+              <li>
+                <a href="./index.html">Origin</a>
+              </li>
+              <li>
+                <a href="./devBlog.html">Dev Blog</a>
+              </li>
+              <li>
+                <a href="./features.html">Planned Features</a>
+              </li>
+              <li class="active">
+                <a href="./donate.html">Support & Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      </div>
+    </div>
+<!--Navbar End-->
+<!--Jumbotron body starts here. (jumbotron logo is jumbo)-->
+  <div class="jumbotron">
+        <h1>Please help us make the <strong>Origin</strong> a reality by supporting!</result>
+        <p class="lead">We are a grassroots start up company with no corporate sponsors and we need your support to make this project successful.</p>
+        <!--<a class="btn btn-large btn-success" href="#">Support Now!</a>-->
+  
+
+
+
+
+
+<script src="http://cdn.bitmindo.com/dogecoin.min.js"></script>
+<script>
+  CoinWidgetCom.go({
+    wallet_address: "DGarHbWsYCiRYNuG199hd4EcnsEMkaZA9x"
+    , currency: "dogecoin"
+    , counter: "amount"
+    , alignment: "bl"
+    , qrcode: true
+    , auto_show: false
+    , lbl_button: "Donate"
+    , lbl_address: "Tip Dogecoin to this Address:"
+    , lbl_amount: "DOGE"
+  });
+</script>
+        
+</div>
+
+<!--Bitpay chunk-->
+<form id="makeDonation" action="https://bitpay.com/checkout" method="post" onsubmit="return bp.validateMobileCheckoutForm($('#makeDonation'));" >
+        <input name="action" type="hidden" value="checkout">
+        <fieldset class="phone-form well form-horizontal" style="margin-left: 10%; margin-right: 10%; margin-top: 5px;">
+          <!--BitPay Logo--><a href="https://bitpay.com/faq" title="How BitPay Works" onclick="javascript:window.open('https://bitpay.com/faq'); return false;" style="margin-left:45%;"><img src="https://bitpay.com/img/logo.png" border="0" alt="BitPay Logo" width="200"></a>
+            <div id="orderID" class="control-group" style="padding: 2%;">
+              <label class="control-label" style="width: 40px">Email:</label>
+              <div class="controls" style="margin-left: 60px">
+                <input type="email" name="email" placeholder="Email Address">
+                <br>
+              </div>
+            </div>
+            <div id="price" class="control-group" style="padding: 2%;">
+              <label class="control-label" style="width: 40px">Amount:</label>
+              <div class="controls" style="margin-left: 60px">
+                <input name="price" type="number" class="noscroll" value="0.01" placeholder="Amount" maxlength="10" min="0.01" step="0.01" style="width: 39%"/>
+                <select name="currency" value="" style="width: 49%">
+                  <option value="USD">USD</option>
+                  <option value="BTC" selected="selected">BTC</option>
+                  <option value="EUR">EUR</option>
+                  <option value="GBP">GBP</option>
+                  <option value="AUD">AUD</option>
+                  <option value="BGN">BGN</option>
+                  <option value="BRL">BRL</option>
+                  <option value="CAD">CAD</option>
+                  <option value="CHF">CHF</option>
+                  <option value="CNY">CNY</option>
+                  <option value="CZK">CZK</option>
+                  <option value="DKK">DKK</option>
+                  <option value="HKD">HKD</option>
+                  <option value="HRK">HRK</option>
+                  <option value="HUF">HUF</option>
+                  <option value="IDR">IDR</option>
+                  <option value="ILS">ILS</option>
+                  <option value="INR">INR</option>
+                  <option value="JPY">JPY</option>
+                  <option value="KRW">KRW</option>
+                  <option value="LTL">LTL</option>
+                  <option value="LVL">LVL</option>
+                  <option value="MXN">MXN</option>
+                  <option value="MYR">MYR</option>
+                  <option value="NOK">NOK</option>
+                  <option value="NZD">NZD</option>
+                  <option value="PHP">PHP</option>
+                  <option value="PLN">PLN</option>
+                  <option value="RON">RON</option>
+                  <option value="RUB">RUB</option>
+                  <option value="SEK">SEK</option>
+                  <option value="SGD">SGD</option>
+                  <option value="THB">THB</option>
+                  <option value="TRY">TRY</option>
+                  <option value="ZAR">ZAR</option>
+                </select/>
+              </div>
+            </div>
+          <br>
+          <input type="hidden" name="data" value="DTV4JaKv709xq02lnDoV6UfZMd7kpbA3Q5UTLsAF819k6aweomGYbk/rz31zVQF9yucO/AZde8L6txLC5eSdu0+FQYoKUnT/oeYwJaibJEImSu8REcz7nDgW8Z+fwG2wV2mzeP9ZSzfbOjxCmPaC9Uglt166f4Si4olInqRvLG9kAhtOxYg9JHlGWZ9lHctY">
+          <div style="margin: auto; width: 100%; text-align: center">
+            <input type="submit" value="Support with BitPay" class="btn btn-large btn-success">
+          </div>
+        </fieldset>
+      </form>
+
+<!--Paypal-->
+        <form action="https://www.paypal.com/cgi-bin/webscr" method="post" target="_top">
+
+          <fieldset class="phone-form well form-horizontal" style="margin-left: 10%; margin-right: 10%; margin-top: 5px;"><!-- PayPal Logo --><a href="https://www.paypal.com/uk/webapps/mpp/paypal-popup" title="How PayPal Works" onclick="javascript:window.open('https://www.paypal.com/uk/webapps/mpp/paypal-popup','WIPaypal','toolbar=no, location=no, directories=no, status=no, menubar=no, scrollbars=yes, resizable=yes, width=1060, height=700'); return false;"><img src="https://www.paypalobjects.com/webstatic/mktg/Logo/pp-logo-200px.png" border="0" alt="PayPal Logo" style="margin-left:45%;"></a><!-- PayPal Logo -->
+            <div id="orderID" class="control-group" style="padding: 2%;">
+              <label class="control-label" style="width: 40px">Email:</label>
+              <div class="controls" style="margin-left: 60px">
+                <input type="email" name="email" placeholder="Email Address">
+                <br>
+              </div>
+            </div>
+            <div id="orderID" class="control-group" style="padding: 2%;">
+              <label class="control-label" style="width: 40px">Amount:</label>
+              <div class="controls" style="margin-left: 60px">
+                <input type="number" name="amount" value="10" min="1" step="1" style="width: 39%">
+              </div>
+            </div>
+            <input type="hidden" name="cmd" value="_donations">
+            <input type="hidden" name="business" value="californiadreamingeagles@gmail.com">
+            <input type="hidden" name="lc" value="US">
+            <input type="hidden" name="item_name" value="California Dreaming Eagles">
+            <input type="hidden" name="no_note" value="0">
+            <input type="hidden" name="currency_code" value="USD">
+            <input type="hidden" name="bn" value="PP-DonationsBF:btn_donateCC_LG.gif:NonHostedGuest">
+            <div style="margin: auto; width: 100%; text-align: center">
+              <input type="submit" value="Support with Paypal" class="btn btn-large btn-success">
+            </div>
+
+          </fieldset>
+        </form>
+
+
+
+  <div class="footer">
+    <div class="navbar navbar-inverse">
+      <div class="navbar-inner">
+          <div class="container">
+              <button type="button" class="btn btn-navbar" data-toggle="collapse" data-target=".nav-collapse">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
+              <a class="brand" href="./index.html">Origin</a>
+              <div class="nav-collapse collapse">
+              </div>
+              <a href="https://www.viglink.com/legal/disclosures/users?vgtag=badge">
+                <img alt="VigLink badge" height="31" src="//www.viglink.com/images/badges/88x31.png" title="Links monetized by VigLink" width="88" />
+              </a>
+          </div>
+      </div>
+      </div>
+  </div>
+  <!--VigLink script-->
+  <script type="text/javascript">
+  var vglnk = { api_url: '//api.viglink.com/api',
+                key: 'ad88629abf1d39a07cbff410c2a158b3' };
+
+  (function(d, t) {
+    var s = d.createElement(t); s.type = 'text/javascript'; s.async = true;
+    s.src = ('https:' == document.location.protocol ? vglnk.api_url :
+             '//cdn.viglink.com/api') + '/vglnk.js';
+    var r = d.getElementsByTagName(t)[0]; r.parentNode.insertBefore(s, r);
+  }(document, 'script'));
+</script>
+
+
+  </body>
+</html>
