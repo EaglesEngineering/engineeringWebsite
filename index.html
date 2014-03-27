@@ -37,6 +37,7 @@
               <li itemprop="brand" itemscope itemtype="http://schema.org/Brand" class="active">
                 <a href="./index.html">
 <span itemprop="name">Origin</span></a>
+              
 <meta itemprop="logo" content="http://projectorigin.org/img/originTitle.png"></li>
               <li>
                 <a href="./devBlog.html">Dev Blog</a>
@@ -45,7 +46,8 @@
                 <a href="./features.html">Planned Features</a>
               </li>
               <li>
-                <a href="./donate.html">Support & Contact</a>
+                <a itemprop="offers" itemscope itemtype="http://schema.org/Offer" href="./donate.html">
+<span itemprop="price">Support</span> & Contact</a>
               </li>
             </ul>
           </div>
@@ -82,11 +84,10 @@
     </div>
   </div>
 <!-- Gradient thingy goes away here -->
-<!-- Subotron body starts here. (subotron logo is jumbo) -->
-
+<!-- Jumbotron body starts here. (jumbotron logo is jumbo) -->
   <div class="subotron" id="sub1">
-        <h1>What is The Origin?</h1>
-        <p class="lead" itemprop="description">The Origin is a pen-modeled input device (akin to any Wacom tablet) that allows users to control a cursor remotely by drawing on any passive wall or flat surface.</p>
+        <h1 itemprop="description">What is The Origin?</h1>
+        <p class="lead" >The Origin is a pen-modeled input device (akin to any Wacom tablet) that allows users to control a cursor remotely by drawing on any passive wall or flat surface.</p>
         <br/>
         <!-- <a class="btn btn-large btn-success" href="donate.html">Support Now!</a> -->
       </div>
@@ -98,7 +99,6 @@
         <br/>
   </div>
  <div class="break" style ="width:75%;   margin-left: auto; margin-right: auto;"></div>
-
   <div class="subotron">
         <h1 itemprop="description">Where Will It Go?</h1>
         <p class="lead">Later options include interaction in 3-d space, and full 6 degree range of motion (rotation detection). Check out our <a href="./features.html">Planned Features</a> to see what's in the works</p>
